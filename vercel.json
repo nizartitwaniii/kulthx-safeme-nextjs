@@ -1,0 +1,26 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "framework": "nextjs",
+  "routes": [
+    {
+      "src": "/api/script",
+      "dest": "/api/script"
+    },
+    {
+      "src": "/api/protect", 
+      "dest": "/api/protect"
+    },
+    {
+      "src": "/api/stats",
+      "dest": "/api/stats"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
+}
